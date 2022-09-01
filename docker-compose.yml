@@ -1,0 +1,14 @@
+version: "3.10"
+services:
+  worker:
+    build: .
+    environment:
+      - API_HASH=${API_HASH}
+      - API_ID=${API_ID}
+      - BOT_TOKEN=${BOT_TOKEN}
+      - SUDO_USERS=${SUDO_USERS}
+      - REPLY_MESSAGE=${REPLY_MESSAGE}
+      - SESSION_STRING=${SESSION_STRING}
+      - SUPPORT_GROUP=${SUPPORT_GROUP}
+      - UPDATES_CHANNEL=${UPDATES_CHANNEL}
+      - ASSISTANT_NAME=${ASSISTANT_NAME}
